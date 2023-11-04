@@ -129,6 +129,7 @@ const CampaignForm = () => {
                   <option value="1Password Change Password">1Password Change Password</option>
                   <option value="Gmail Block Login Email">Gmail Block Login Email</option>
                   <option value="CommBank Unread Message">CommBank Unread Message</option>
+                  <option value="Fake Job Opportunity">Fake Job Opportunity</option>
                 </select>
                 <span className="absolute top-1/2 right-4 z-30 -translate-y-1/2">
                   <svg
