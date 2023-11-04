@@ -1,20 +1,20 @@
 import { lazy } from 'react';
 
-const Calendar = lazy(() => import('../pages/Campaign'));
+const Campaign = lazy(() => import('../pages/Campaign'));
 const Chart = lazy(() => import('../pages/Chart'));
 const FormElements = lazy(() => import('../pages/Form/FormElements'));
 const FormLayout = lazy(() => import('../pages/Form/FormLayout'));
 const Profile = lazy(() => import('../pages/Profile'));
 const Settings = lazy(() => import('../pages/Settings'));
-const Tables = lazy(() => import('../pages/Tables'));
+const WebsiteLibrary = lazy(() => import('../pages/WebsiteLibrary'));
 const Alerts = lazy(() => import('../pages/UiElements/Alerts'));
 const Buttons = lazy(() => import('../pages/UiElements/Buttons'));
 
 const coreRoutes = [
   {
-    path: '/calendar',
-    title: 'Calender',
-    component: Calendar,
+    path: '/campaign',
+    title: 'Campaign',
+    component: Campaign,
   },
   {
     path: '/profile',
@@ -32,9 +32,9 @@ const coreRoutes = [
     component: FormLayout,
   },
   {
-    path: '/tables',
-    title: 'Tables',
-    component: Tables,
+    path: '/website-library',
+    title: 'Website Library',
+    component: WebsiteLibrary,
   },
   {
     path: '/settings',
