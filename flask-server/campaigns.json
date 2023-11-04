@@ -1,0 +1,13 @@
+[
+    {
+        "campaignName": "asdf",
+        "emailingList": [
+            "beccie.hsu@gmail.com",
+            "betty@gmail.com",
+            "sally@gmail.com",
+            "tunafish@outlook.com"
+        ],
+        "campaignType": "CommBank Unread Message",
+        "dateTime": "2023-11-04T14:26"
+    }
+]
