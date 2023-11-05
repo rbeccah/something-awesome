@@ -40,3 +40,4 @@ Further details on how to set up the Google App Password can be found here -> ht
 - Frontend React Template by TailAdmin (https://github.com/TailAdmin/free-react-tailwind-admin-dashboard/tree/main)
 - Email templates from CanIPhish Website (https://caniphish.com/free-phishing-test/phishing-email-templates)
 - Website templates from ZPhisher (https://github.com/htr-tech/zphisher)
+- Phishing Dataset for Machine Learning (https://data.mendeley.com/datasets/h3cgnj8hft/1)
