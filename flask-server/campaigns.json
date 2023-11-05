@@ -1,13 +1,136 @@
 [
     {
-        "campaignName": "asdf",
-        "emailingList": [
-            "beccie.hsu@gmail.com",
-            "betty@gmail.com",
-            "sally@gmail.com",
-            "tunafish@outlook.com"
-        ],
-        "campaignType": "CommBank Unread Message",
-        "dateTime": "2023-11-04T14:26"
+        "id": 0,
+        "campaignName": "Campaign 3",
+        "emailingList": {
+            "beccie.hsu@gmail.com": "Rebecca",
+            "rebeccah.dev@gmail.com": "Tuna",
+            "rbeccahsu@gmail.com": "Sally ",
+            "rebecca.hsu@student.unsw.edu.au": "Betty"
+        },
+        "campaignType": "Adobe Change Password",
+        "dateTime": "2023-11-05T22:28"
+    },
+    {
+        "id": 1,
+        "campaignName": "Campaign 1",
+        "emailingList": {
+            "beccie.hsu@gmail.com": "Rebecca",
+            "rebeccah.dev@gmail.com": "Tuna",
+            "rbeccahsu@gmail.com": "Sally ",
+            "rebecca.hsu@student.unsw.edu.au": "Betty"
+        },
+        "campaignType": "Google Sign-In Attempt",
+        "dateTime": "2023-11-05T22:31"
+    },
+    {
+        "id": 2,
+        "campaignName": "Campaign 3",
+        "emailingList": {
+            "beccie.hsu@gmail.com": "Rebecca",
+            "rebeccah.dev@gmail.com": "Tuna",
+            "rbeccahsu@gmail.com": "Sally "
+        },
+        "campaignType": "Adobe Change Password",
+        "dateTime": "2023-11-05T22:36"
+    },
+    {
+        "id": 3,
+        "campaignName": "Campaign 3",
+        "emailingList": {
+            "beccie.hsu@gmail.com": "Rebecca",
+            "rebeccah.dev@gmail.com": "Tuna",
+            "rbeccahsu@gmail.com": "Sally "
+        },
+        "campaignType": "Adobe Change Password",
+        "dateTime": "2023-11-05T22:40"
+    },
+    {
+        "id": 4,
+        "campaignName": "Campaign 3",
+        "emailingList": {
+            "beccie.hsu@gmail.com": "Rebecca",
+            "rebeccah.dev@gmail.com": "Tuna",
+            "rbeccahsu@gmail.com": "Sally "
+        },
+        "campaignType": "Adobe Change Password",
+        "dateTime": "2023-11-05T22:44"
+    },
+    {
+        "id": 5,
+        "campaignName": "Campaign 3",
+        "emailingList": {
+            "beccie.hsu@gmail.com": "Rebecca",
+            "rebeccah.dev@gmail.com": "Tuna",
+            "rbeccahsu@gmail.com": "Sally "
+        },
+        "campaignType": "Adobe Change Password",
+        "dateTime": "2023-11-05T22:44"
+    },
+    {
+        "id": 6,
+        "campaignName": "Campaign 3",
+        "emailingList": {
+            "beccie.hsu@gmail.com": "Rebecca",
+            "rebeccah.dev@gmail.com": "Tuna",
+            "rbeccahsu@gmail.com": "Sally "
+        },
+        "campaignType": "Adobe Change Password",
+        "dateTime": "2023-11-05T22:48"
+    },
+    {
+        "id": 7,
+        "campaignName": "Campaign 3",
+        "emailingList": {
+            "beccie.hsu@gmail.com": "Rebecca",
+            "rebeccah.dev@gmail.com": "Tuna",
+            "rbeccahsu@gmail.com": "Sally "
+        },
+        "campaignType": "Adobe Change Password",
+        "dateTime": "2023-11-05T22:50"
+    },
+    {
+        "id": 8,
+        "campaignName": "Campaign 3",
+        "emailingList": {
+            "beccie.hsu@gmail.com": "Rebecca",
+            "rebeccah.dev@gmail.com": "Tuna",
+            "rbeccahsu@gmail.com": "Sally "
+        },
+        "campaignType": "Adobe Change Password",
+        "dateTime": "2023-11-05T22:55"
+    },
+    {
+        "id": 9,
+        "campaignName": "Campaign 3",
+        "emailingList": {
+            "beccie.hsu@gmail.com": "Rebecca",
+            "rebeccah.dev@gmail.com": "Tuna",
+            "rbeccahsu@gmail.com": "Sally "
+        },
+        "campaignType": "Adobe Change Password",
+        "dateTime": "2023-11-05T22:57"
+    },
+    {
+        "id": 10,
+        "campaignName": "Campaign 3",
+        "emailingList": {
+            "beccie.hsu@gmail.com": "Rebecca",
+            "rebeccah.dev@gmail.com": "Tuna",
+            "rbeccahsu@gmail.com": "Sally "
+        },
+        "campaignType": "Adobe Change Password",
+        "dateTime": "2023-11-05T22:58"
+    },
+    {
+        "id": 11,
+        "campaignName": "Campaign 3",
+        "emailingList": {
+            "beccie.hsu@gmail.com": "Rebecca",
+            "rebeccah.dev@gmail.com": "Tuna",
+            "rbeccahsu@gmail.com": "Sally "
+        },
+        "campaignType": "Google Sign-In Attempt",
+        "dateTime": "2023-11-06T00:48"
     }
 ]

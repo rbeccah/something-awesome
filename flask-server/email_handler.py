@@ -26,7 +26,8 @@ password_email = os.getenv("PASSWORD")
 
 context = ssl.create_default_context()
 
-def send_email(template, subject, recipients, name):
+# Sends email given the template, subject and recipients 
+def send_email(template, subject, recipients):
     env = Environment(
         loader=FileSystemLoader('email_templates'),
         autoescape=select_autoescape(['html'])
@@ -37,26 +38,25 @@ def send_email(template, subject, recipients, name):
         # Login with credentials
         smtp.login(sender_email, password_email)
 
-        for recipient in recipients:
+        for (email, name) in recipients.items():
             msg = MIMEMultipart()
             msg['From'] = sender_email
-            msg['To'] = recipient
+            msg['To'] = email
             msg['Subject'] = subject
 
             # Render the HTML content from the template
-            html_content = template.render(name=name)
+            html_content = template.render(name=name, recipient=email)
 
             # Attach the HTML content to the email
             msg.attach(MIMEText(html_content,'html'))
             
             # Send email
             smtp.send_message(msg)
-            print("Email sent")
+            print(f"Email sent to {email}")
 
 if __name__ == "__main__":
     send_email(
-        template="adobe_login.html",
-        subject="You Adobe security profile has changed",
-        recipients=["rebeccah.dev@gmail.com"],
-        name="Rebecca Hsu"
+        template="google_signin.html",
+        subject="Google Sign-In Attempt Was Blocked",
+        recipients={"rebeccah.dev@gmail.com": "Rebecca"},
     )

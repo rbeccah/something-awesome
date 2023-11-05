@@ -1,7 +1,6 @@
 import React, { ChangeEvent, FormEvent, useState } from 'react';
 
-import Snackbar from '@mui/material/Snackbar';
-import MuiAlert from '@mui/material/Alert';
+import { Props } from 'react-apexcharts';
 
 interface FormData {
   campaignName: string;
@@ -10,15 +9,13 @@ interface FormData {
   dateTime: string;
 }
 
-const CampaignForm = () => {
+const CampaignForm: React.FC<Props> = ({ handleClose, onCampaignSaved }) => {
   const [formData, setFormData] = useState<FormData>({
     campaignName: '',
     emailingList: '', // Will be a CSV string
     campaignType: '',
     dateTime: '',
   });
-
-  const [isSnackbarOpen, setIsSnackbarOpen] = useState(false);
 
   const handleInputChange = (e: ChangeEvent<HTMLInputElement | HTMLInputElement>) => {
     const { id, value } = e.target;
@@ -63,17 +60,13 @@ const CampaignForm = () => {
       })
 
       if (response.ok) {
-        setIsSnackbarOpen(true);
-        console.log(isSnackbarOpen)
+        handleClose();
+        onCampaignSaved();
         console.log('Form submitted successfully');
       }
     } catch (error) {
       console.error('Error submitting form', error);
     }
-  };
-
-  const handleSnackbarClose = () => {
-    setIsSnackbarOpen(false);
   };
 
   return (
@@ -171,15 +164,6 @@ const CampaignForm = () => {
             <button className="flex w-full justify-center rounded bg-primary p-3 font-medium text-gray">
               Save Campaign
             </button>
-
-            {/* Snackbar for successful submission */}
-            <div className="py-3 px-6">
-              <Snackbar open={isSnackbarOpen} autoHideDuration={6000} onClose={handleSnackbarClose}>
-                <MuiAlert onClose={handleSnackbarClose} severity="success" sx={{ width: '100%' }}>
-                  Form submitted successfully
-                </MuiAlert>
-              </Snackbar>
-            </div>
           </div>
         </form>
       </div>

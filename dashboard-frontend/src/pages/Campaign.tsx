@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { useState } from 'react';
 
 import { Link } from 'react-router-dom';
 import Breadcrumb from '../components/Breadcrumb';
@@ -22,7 +22,19 @@ const style = {
 const Campaign = () => {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
+  const [isCampaignSaved, setIsCampaignSaved] = useState(false);
+
+  const handleClose = () => {
+    setOpen(false);
+  }
+
+  const handleCampaignSaved = () => {
+  setIsCampaignSaved(true);
+};
+
+  const resetConfirmation = () => {
+    setIsCampaignSaved(false);
+  };
 
   return (
     <>
@@ -58,6 +70,12 @@ const Campaign = () => {
           New Campaign
         </Link>
 
+        {isCampaignSaved && (
+          <div className="text-green-500 font-medium mt-2">
+            Campaign saved successfully!
+          </div>
+        )}
+
         <Modal
           open={open}
           onClose={handleClose}
@@ -66,7 +84,7 @@ const Campaign = () => {
           className=""
         >
           <Box sx={style}>
-            <CampaignForm />
+            <CampaignForm handleClose={handleClose} onCampaignSaved={handleCampaignSaved}/>
           </Box>
         </Modal>
       </div>
