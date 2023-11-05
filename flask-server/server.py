@@ -46,7 +46,6 @@ def submit_campaign():
         'campaignType': data['campaignType'],
         'dateTime': data['dateTime']
     }
-    print(campaign)
 
     # Append the new campaign to the campaigns list
     campaigns.append(campaign)
@@ -91,7 +90,6 @@ def send_email_from_database(index):
     email_template = email_map[campaign_type][0]
     subject = email_map[campaign_type][1]
     recipients = campaign['emailingList']
-    print(f'{email_template} {subject} {recipients}')
 
     email_handler.send_email(email_template, subject, recipients)
 
