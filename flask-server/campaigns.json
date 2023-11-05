@@ -132,5 +132,38 @@
         },
         "campaignType": "Google Sign-In Attempt",
         "dateTime": "2023-11-06T00:48"
+    },
+    {
+        "id": 12,
+        "campaignName": "Campaign 3",
+        "emailingList": {
+            "beccie.hsu@gmail.com": "Rebecca",
+            "rebeccah.dev@gmail.com": "Tuna",
+            "rbeccahsu@gmail.com": "Sally "
+        },
+        "campaignType": "Facebook Login Verification",
+        "dateTime": "2023-11-06T03:37"
+    },
+    {
+        "id": 13,
+        "campaignName": "Campaign 3",
+        "emailingList": {
+            "beccie.hsu@gmail.com": "Rebecca",
+            "rebeccah.dev@gmail.com": "Tuna",
+            "rbeccahsu@gmail.com": "Sally "
+        },
+        "campaignType": "Facebook Login Verification",
+        "dateTime": "2023-11-06T03:37"
+    },
+    {
+        "id": 14,
+        "campaignName": "Campaign 3",
+        "emailingList": {
+            "beccie.hsu@gmail.com": "Rebecca",
+            "rebeccah.dev@gmail.com": "Tuna",
+            "rbeccahsu@gmail.com": "Sally "
+        },
+        "campaignType": "Facebook Login Verification",
+        "dateTime": "2023-11-06T03:37"
     }
 ]

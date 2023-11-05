@@ -79,13 +79,11 @@ const DropdownNotification = () => {
             >
               <p className="text-sm">
                 <span className="text-black dark:text-white">
-                  Edit your information in a swipe
+                  34 people viewed phishing emails this week
                 </span>{' '}
-                Sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim.
               </p>
 
-              <p className="text-xs">12 May, 2025</p>
+              <p className="text-xs">5 May, 2023</p>
             </Link>
           </li>
           <li>
@@ -95,12 +93,12 @@ const DropdownNotification = () => {
             >
               <p className="text-sm">
                 <span className="text-black dark:text-white">
-                  It is a long established fact
+                  Campaign 3 has successfully launched. 
                 </span>{' '}
-                that a reader will be distracted by the readable.
+                10 people have been emailed in Campaign 3. 
               </p>
 
-              <p className="text-xs">24 Feb, 2025</p>
+              <p className="text-xs">4 May, 2023</p>
             </Link>
           </li>
           <li>
@@ -110,29 +108,12 @@ const DropdownNotification = () => {
             >
               <p className="text-sm">
                 <span className="text-black dark:text-white">
-                  There are many variations
+                  4 people have have been successfully phished in the past week. 
                 </span>{' '}
-                of passages of Lorem Ipsum available, but the majority have
-                suffered
+                The most successful email template was 'Instagram Suspicious Login'
               </p>
 
-              <p className="text-xs">04 Jan, 2025</p>
-            </Link>
-          </li>
-          <li>
-            <Link
-              className="flex flex-col gap-2.5 border-t border-stroke px-4.5 py-3 hover:bg-gray-2 dark:border-strokedark dark:hover:bg-meta-4"
-              to="#"
-            >
-              <p className="text-sm">
-                <span className="text-black dark:text-white">
-                  There are many variations
-                </span>{' '}
-                of passages of Lorem Ipsum available, but the majority have
-                suffered
-              </p>
-
-              <p className="text-xs">01 Dec, 2024</p>
+              <p className="text-xs">1 May, 2023</p>
             </Link>
           </li>
         </ul>
