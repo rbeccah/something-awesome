@@ -126,10 +126,12 @@ const CampaignForm = () => {
                   onChange={handleSelectChange}
                 >
                   <option value="default">Select Campaign Type</option>
-                  <option value="1Password Change Password">1Password Change Password</option>
-                  <option value="Gmail Block Login Email">Gmail Block Login Email</option>
-                  <option value="CommBank Unread Message">CommBank Unread Message</option>
-                  <option value="Fake Job Opportunity">Fake Job Opportunity</option>
+                  <option value="Adobe Change Password">Adobe Change Password</option>
+                  <option value="Facebook Login Verification">Facebook Login Verification</option>
+                  <option value="Google Drive Shared Folder">Google Drive Shared Folder</option>
+                  <option value="Google Sign-In Attempt">Google Sign-In Attempt</option>
+                  <option value="Instagram Suspicious Login">Instagram Suspicious Login</option>
+                  <option value="Office 365 Password Request">Office 365 Password Request</option>
                 </select>
                 <span className="absolute top-1/2 right-4 z-30 -translate-y-1/2">
                   <svg
@@ -167,7 +169,7 @@ const CampaignForm = () => {
             </div>
 
             <button className="flex w-full justify-center rounded bg-primary p-3 font-medium text-gray">
-              Send Campaign
+              Save Campaign
             </button>
 
             {/* Snackbar for successful submission */}

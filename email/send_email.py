@@ -26,7 +26,7 @@ password_email = os.getenv("PASSWORD")
 
 context = ssl.create_default_context()
 
-def send_email(template, subject, recipients, name, date_time, image_path):
+def send_email(template, subject, recipients, name):
     env = Environment(
         loader=FileSystemLoader('email_templates'),
         autoescape=select_autoescape(['html'])
@@ -44,17 +44,10 @@ def send_email(template, subject, recipients, name, date_time, image_path):
             msg['Subject'] = subject
 
             # Render the HTML content from the template
-            html_content = template.render(name=name, date_time=date_time)
+            html_content = template.render(name=name)
 
             # Attach the HTML content to the email
             msg.attach(MIMEText(html_content,'html'))
-
-            # Attach the image to the email with "Content-ID"
-            with open(image_path, 'rb') as image_file:
-                image_data = image_file.read()
-            image = MIMEImage(image_data)
-            image.add_header("Content-ID", "<my_image_cid>")  # Use the same "Content-ID" as in your HTML
-            msg.attach(image)
             
             # Send email
             smtp.send_message(msg)
@@ -62,10 +55,8 @@ def send_email(template, subject, recipients, name, date_time, image_path):
 
 if __name__ == "__main__":
     send_email(
-        template="job_opportunity.html",
-        subject="Test Something Awesome Project",
-        name="Rebecca Hsu",
+        template="adobe_login.html",
+        subject="You Adobe security profile has changed",
         recipients=["rebeccah.dev@gmail.com"],
-        date_time="4 Nov 2023",
-        image_path="email_templates/recruiter-email-signature.png"
+        name="Rebecca Hsu"
     )
