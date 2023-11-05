@@ -4,7 +4,7 @@ import TableOne from '../components/TableOne';
 const WebsiteLibrary = () => {
   return (
     <>
-      <Breadcrumb pageName="Phishing Websites Library" />
+      <Breadcrumb pageName="Phishing Library" />
 
       <div className="flex flex-col gap-10">
         <TableOne />
